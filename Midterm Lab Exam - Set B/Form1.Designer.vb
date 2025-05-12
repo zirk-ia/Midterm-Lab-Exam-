@@ -29,7 +29,6 @@ Partial Class Form1
         txtPassword = New TextBox()
         btnLogin = New Button()
         btnClear = New Button()
-        btnExit = New Button()
         SuspendLayout()
         ' 
         ' lblUsername
@@ -101,18 +100,6 @@ Partial Class Form1
         btnClear.Text = "CLEAR"
         btnClear.UseVisualStyleBackColor = False
         ' 
-        ' btnExit
-        ' 
-        btnExit.BackColor = Color.LightBlue
-        btnExit.Font = New Font("Microsoft YaHei UI", 12F, FontStyle.Bold)
-        btnExit.ForeColor = Color.Navy
-        btnExit.Location = New Point(453, 444)
-        btnExit.Name = "btnExit"
-        btnExit.Size = New Size(113, 36)
-        btnExit.TabIndex = 7
-        btnExit.Text = "EXIT"
-        btnExit.UseVisualStyleBackColor = False
-        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -120,7 +107,6 @@ Partial Class Form1
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(682, 553)
-        Controls.Add(btnExit)
         Controls.Add(btnClear)
         Controls.Add(btnLogin)
         Controls.Add(txtPassword)
@@ -140,6 +126,5 @@ Partial Class Form1
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents btnLogin As Button
     Friend WithEvents btnClear As Button
-    Friend WithEvents btnExit As Button
 
 End Class
