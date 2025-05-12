@@ -32,6 +32,7 @@ Partial Class Form2
         btnWithdraw = New Button()
         btnDeposit = New Button()
         btnBack = New Button()
+        btnExit = New Button()
         SuspendLayout()
         ' 
         ' lblActiveUser
@@ -139,6 +140,18 @@ Partial Class Form2
         btnBack.Text = "BACK"
         btnBack.UseVisualStyleBackColor = False
         ' 
+        ' btnExit
+        ' 
+        btnExit.BackColor = Color.LightBlue
+        btnExit.Font = New Font("Microsoft YaHei UI", 12F, FontStyle.Bold)
+        btnExit.ForeColor = Color.Navy
+        btnExit.Location = New Point(440, 496)
+        btnExit.Name = "btnExit"
+        btnExit.Size = New Size(113, 36)
+        btnExit.TabIndex = 13
+        btnExit.Text = "EXIT"
+        btnExit.UseVisualStyleBackColor = False
+        ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -146,6 +159,7 @@ Partial Class Form2
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(682, 553)
+        Controls.Add(btnExit)
         Controls.Add(btnBack)
         Controls.Add(btnDeposit)
         Controls.Add(btnWithdraw)
@@ -171,4 +185,5 @@ Partial Class Form2
     Friend WithEvents btnWithdraw As Button
     Friend WithEvents btnDeposit As Button
     Friend WithEvents btnBack As Button
+    Friend WithEvents btnExit As Button
 End Class

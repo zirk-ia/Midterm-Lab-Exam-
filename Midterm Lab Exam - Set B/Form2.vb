@@ -71,5 +71,8 @@
         Me.Close() ' Close Form2
     End Sub
 
-
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        'Exit the application
+        Application.Exit()
+    End Sub
 End Class
